@@ -12,7 +12,7 @@ fn App() -> Html {
 
     html! {
         <div class="card">
-        <h1 class="card__title">{"Count in main: "} {state.count}</h1>
+        <h1 class="title">{"Count in main: "} {state.count}</h1>
         <Counter/>
         </div>
     }

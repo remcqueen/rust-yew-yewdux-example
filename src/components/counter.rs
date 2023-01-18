@@ -10,8 +10,8 @@ pub fn Counter() -> Html {
 
     html! {
         <>
-            <p class="card__header">{"Count in counter: "} { state.count }</p>
-            <button class="card__button" {onclick}>{"+1"}</button>
+            <p class="header">{"Count in counter: "} { state.count }</p>
+            <button {onclick}>{"+1"}</button>
         </>
     }
 }
