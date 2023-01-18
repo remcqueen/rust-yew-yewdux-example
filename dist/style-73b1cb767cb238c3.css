@@ -1,0 +1,120 @@
+.flip-scale-2-hor-top {
+  -webkit-animation: flip-scale-2-hor-top 0.5s linear both;
+  animation: flip-scale-2-hor-top 0.5s linear both;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.box {
+  border: 3px solid #666;
+  background-color: #ddd;
+  border-radius: 0.5em;
+  padding: 10px;
+  cursor: move;
+}
+
+.box-hidden {
+  opacity: 0.1;
+}
+
+.box.over {
+  border: 3px dotted #666;
+}
+
+[draggable] {
+  user-select: none;
+}
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px #ccc;
+  padding: 16px;
+  max-width: 200px;
+}
+
+.card__header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card__title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.card__button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card__button:hover {
+  background-color: #3e8e41;
+}
+
+.card__title::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  background-color: rgb(66, 66, 66);
+  margin-top: 8px;
+  position: absolute;
+  left: 2.5%;
+}
